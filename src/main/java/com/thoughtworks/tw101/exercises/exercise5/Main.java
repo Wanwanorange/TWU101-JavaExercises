@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) {
 
         Rectangle[] rectangles = {
-                new Rectangle(2, 3),
-                new Rectangle(3, 4),
-                new Rectangle(4, 5),
-                new Rectangle(5, 6),
-                new Rectangle(6, 7)
+                new Rectangle(2, 3),    //6
+                new Rectangle(3, 4),    //12
+                new Rectangle(4, 5),    //20
+                new Rectangle(5, 6),    //30
+                new Rectangle(6, 7)     //42
         };
 
         float average = new RectangleAverager().averageArea(rectangles);
