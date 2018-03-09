@@ -22,13 +22,11 @@ public class Main {
 
         while (playing) {
             if (g.checkInput(n)) {
-                if (!g.guessNumCorrectly(NUMBER)) {
-                    n = input.next();
-                } else {
+                if (g.guessNumCorrectly(NUMBER)) {
                     break;
                 }
             }
-
+            n = input.next();
         }
 
     }
