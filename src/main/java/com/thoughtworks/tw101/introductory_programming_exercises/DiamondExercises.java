@@ -14,16 +14,20 @@ public class DiamondExercises {
 //            *****
     private static void drawAnIsoscelesTriangle(int n) {
         for (int i = 1; i <= n; i ++) {
-            for ( int j = 0; j < n - i; j ++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k < i *2 ; k ++) {
-                System.out.print("*");
-            }for ( int j = 0; j < n - i; j ++) {
-                System.out.print(" ");
-            }
-            System.out.println();
+            drawStars(n, i);
         }
+    }
+
+    private static void drawStars(int n, int i) {
+        for ( int j = 0; j < n - i; j ++) {
+            System.out.print(" ");
+        }
+        for (int k = 1; k < i *2 ; k ++) {
+            System.out.print("*");
+        }for ( int j = 0; j < n - i; j ++) {
+            System.out.print(" ");
+        }
+        System.out.println();
     }
 
 //    Diamond
@@ -66,16 +70,7 @@ public class DiamondExercises {
 //             *
     private static void drawADiamondWithYourName(int n) {
         for (int i = 1; i < n; i ++) {
-            for ( int j = 0; j < n - i; j ++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k < i *2 ; k ++) {
-                System.out.print("*");
-            }
-            for ( int j = 0; j < n - i; j ++) {
-                System.out.print(" ");
-            }
-            System.out.println();
+            drawStars(n, i);
         }
         System.out.println("Wanchen");
         drawDiamondBottomHalf(n);
